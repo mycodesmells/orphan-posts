@@ -75,9 +75,6 @@ In the end, our playbooks should look like this
 We can run it (remmeber about existing `hosts` file with the definition of your servers) with `ansible-playbook` command:
 
     - hosts: webserver
-      vars_files:
-      - vars/common.yaml
-      - vars/dev.yaml
       gather_facts: False
       tasks:
       - name: Remove node_modules
